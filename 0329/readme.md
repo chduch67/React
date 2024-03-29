@@ -29,3 +29,15 @@ JSX
 6. React Dom은 HTML 애트리뷰트 이름 대신 **camelCase**를 사용한다.
    camelCase : 낙타의 쌍봉과 같이 문자열의 첫 문자를 제외하고 단어의 첫 글자마다 대문자로 표현하는 방식.
                                        출처: https://yangbox.tistory.com/65 [양's World:티스토리]
+
+JSX 코드 작성해보는 실습.
+
+태그 + 컨텐츠를 합쳐 엘리먼트라고 부름
+
+모든 html 문서는 중첩된 html element로 이루어져있다.
+
+createElement를 사용하면 React 엘리먼트를 생성할 수 있다
+(JSX대신 사용할 수 있다.)
+
+
+
