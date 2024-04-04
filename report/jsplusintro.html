@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자기소개</title>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+    .introduce {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px lightgray;
+    }
+    h1 {
+        text-align: center;
+        color: black;
+    }
+    p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: black;
+    }
+    .PH {
+        margin-top: 30px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        display: none;
+    }
+    .PH p {
+        margin: 10px 0;
+    }
+    .button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: skyblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="introduce">
+    <h1>자기소개</h1>
+    <hr>
+    <p>안녕하세요 저는 <strong style="font-size: 20px;">강창우</strong>입니다.</p>
+    <p>웹프로그래밍 응용 수강중 입니다.</p>
+    <button class="button">연락처 표시/숨기기</button>
+    <div class="PH">
+        <h2>연락처</h2>
+        <p>이메일 : chduch6887@naver.com</p>
+        <p>전화번호: 010-8232-6637</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var PH = document.querySelector(".PH");
+        var button = document.querySelector(".button");
+
+        button.addEventListener("click", function() {
+            if (PH.style.display == "none") {
+                PH.style.display = "block";
+                button.textContent = "연락처 숨기기";
+            } else {
+                PH.style.display = "none";
+                button.textContent = "연락처 표시";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
